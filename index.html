@@ -4,44 +4,76 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Home</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./style.css">
-        
+        <title>Bem vindo</title>
+
+        <!--Google Fonts-->
+        <link 
+            href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" 
+            rel="stylesheet">
+
+        <!--Font Awesome-->
+        <link 
+            rel="stylesheet" 
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
+            crossorigin="anonymous">
+
+        <!--Meu Estilo-->
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!--Meu Estilo Slide-->
+        <link rel="stylesheet" href="./css/slideResponsivo.css">
     </head>
     <body>
         <header>
             <div class="container">
-                <a href="https://ProfGerson/ProfGerson.github.io" class="branch"><img src="./logo.png" alt="Gamatec" title="Nome da minha logo"></a>
+                <a href="https://ProfGerson/ProfGerson.github.io" class="branch"><img src="./img/logo.png" alt="Gamatec" title="Gamatec"></a>
                 <nav class="menu">
                     <ul>
-                        <li><a class="menu-link" href="index.html">Início</a></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <main class="container">
-            <article class="super-card">
-                <section class="super-card-img">
-                    <img src="./gerson_peres.jpg" alt="Foto de Gerson Jovino Peres", title="Gerson Peres">
-                    <h1>Gerson Peres</h1>
-                </section>
-                <section class="super-card-text">
-                    <p>
-                        Meu nome é Gerson Jovino Peres, sou mestrando em Computação Aplicada na  
-                        Universidade Tecnologica Federal do Paraná - UTFPR, Licenciado no Eixo Tecnológico: Informática pela Faculdade de Educação Paulistana - FAEP, Pós-Graduado em Educação Profissional e Tecnológica pela Faculdade Unina, Licenciado em Matemática pelas Faculdades Intergradas Ariquemes - FIAR, Pós-Graduado em Administração em Telecomunicação pala Fundação de Estudos Sociais do Paraná - FESP e Graduação em Tecnologia em Processamento de Dados pela Faculdade Paranaense - FACCAR.
-                    </p>
-                    <p>
-                        Atuo na área de Educação Fundamental, Ensino Médio e Educação Profissional como professor desde 1997. 
-                        Atualmente leciono no Colégio Estadual Dom Orione e no Colégio Nossa Senhora da Assunção, ambos na cidade de Curitiba, Paraná. Além de professor, presto atendimento de suporte técnico e assessoria em desenvolvimento de sistemas.
-                    </p>
-                    <p>
-                        As Área de Pesquisa na qual pretendo atuar são: sistemas de informções, gestão da informação, analise de sistemas e modelagem de sistemas
-                    </p>
+        <main>
+            <section class="slide">
+                <ul class="rslides">
+                    <li>
+                        <img src="./img/slide1.jpg" alt="Slide 1">
+                    </li>
+                    <li>
+                        <img src="./img/slide2.jpg" alt="Slide 2">
+                    </li>
+                    <li>
+                        <img src="./img/slide3.jpg" alt="Slide 3">
+                    </li>
+                </ul>
+            </section>
+
+            <article>
+                <h1>Destaques</h1>
+                <section class="lista">
+                    <div class="item">Destaque 1</div>
+                    <div class="item">Destaque 2</div>
+                    <div class="item">Destaque 3</div>
                 </section>
             </article>
         </main>
+
+        <footer>
+            <small>Todos os direitos reservados Gerson Jovino Peres</div>
+        </footer>
     </body>
+
+    <script 
+        src="https://code.jquery.com/jquery-3.4.1.min.js" 
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+        crossorigin="anonymous">
+    </script>
+    <script src="./js/responsiveslides.min.js"></script>
+    <script src="./js/slide.js"></script>
 </html>
